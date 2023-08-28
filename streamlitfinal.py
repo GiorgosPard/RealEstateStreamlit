@@ -38,7 +38,7 @@ X['ADDRESS_TRANSFORMED'] = le.fit_transform(df['ADDRESS'])
 ADDRESS_DIC=X[['ADDRESS','ADDRESS_TRANSFORMED']]
 ADDRESS_DIC = ADDRESS_DIC.drop_duplicates().reset_index()
 
-X = X.drop('ADDRESS', 1)
+X = X.drop('ADDRESS', axis=1)
 
 
 
